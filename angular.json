@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-latex-2": {
+    "angular-latex-sample": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-latex-2",
+            "outputPath": "dist/angular-latex-sample",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-latex-2:build:production"
+              "browserTarget": "angular-latex-sample:build:production"
             },
             "development": {
-              "browserTarget": "angular-latex-2:build:development"
+              "browserTarget": "angular-latex-sample:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-latex-2:build"
+            "browserTarget": "angular-latex-sample:build"
           }
         },
         "test": {
